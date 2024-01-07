@@ -1,4 +1,4 @@
-package com.kartheek.learning.SpringBoot;
+package com.kartheek.learning.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
