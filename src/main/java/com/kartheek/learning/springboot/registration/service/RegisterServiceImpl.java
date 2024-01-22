@@ -37,7 +37,7 @@ public class RegisterServiceImpl implements RegisterService{
         mailMessage.setTo(user.getEmail());
         mailMessage.setSubject("Complete Registration!");
         mailMessage.setText("To confirm your account, please click here : "
-                +"http://localhost:8090/api/register/confirm-account?token="+uuidAsString);
+                +"http://localhost:8081/api/register/confirm-account?token="+uuidAsString);
         emailSenderService.sendEmail(mailMessage);
         return new ResponseEntity<>("Verify email by the link sent on your email address", HttpStatus.OK);
     }

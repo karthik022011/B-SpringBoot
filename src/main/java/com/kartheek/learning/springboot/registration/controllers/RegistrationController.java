@@ -22,7 +22,6 @@ public class RegistrationController {
     @PostMapping("/signup")
     public ResponseEntity<String> registerUser(@RequestBody RegisterReq registerReq){
         // creating user object
-        System.out.println("Started registerUser behaviour!");
         RegisterUser user = new RegisterUser();
         user.setFullName(registerReq.getFullName());
         user.setUserName(registerReq.getUsername());
